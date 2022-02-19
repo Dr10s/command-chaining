@@ -22,5 +22,11 @@ master:command:name:
 `master:command:name` must be equals with `$masterCommand->getName()`
 
 <br><b>PS:</b><br>
+We have no php-cs. <br>
 Sorry, but we have no tests. <br>
-Sorry, but we have no test bundles, i`m just use Symfony project for run as example.
+Sorry, but we have no test bundles, I'm just use Symfony project for run as example.<br>
+This is my first symfony bundle. I'm just use https://symfony.com/doc/current/bundles.html and watch some symfony vendor (`simple-bus/symfony-bridge`) to learn haw it must looks like  
+
+
+<b>Detailed Requirements:</b>
+https://github.com/mbessolov/test-tasks/blob/master/7.md

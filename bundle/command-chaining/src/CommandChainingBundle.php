@@ -2,7 +2,7 @@
 
 namespace Dr10s\CommandChaining;
 
-use Dr10s\CommandChaining\DependencyInjection\CommandChainingExtension;
+use Dr10s\CommandChaining\DependencyInjection\CommandChainExtension;
 use Dr10s\CommandChaining\DependencyInjection\Compiler\RegisterHandlers;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
@@ -27,7 +27,7 @@ class CommandChainingBundle extends Bundle
 
     public function getContainerExtension(): ?ExtensionInterface
     {
-        return new CommandChainingExtension();
+        return new CommandChainExtension();
     }
 
 }
