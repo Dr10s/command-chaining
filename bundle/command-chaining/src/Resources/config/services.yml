@@ -1,0 +1,14 @@
+services:
+
+    command_chaining.command_chain:
+        class: Dr10s\CommandChaining\Chain\CommandChain
+        arguments:
+            - [ ]
+
+    kernel.listener.console:
+        class: Dr10s\CommandChaining\Listener\CommandListener
+        tags:
+            - { name: kernel.event_listener, event: console.command, method: onConsoleCommand }
+            - { name: kernel.event_listener, event: console.terminate, method: onConsoleTerminate }
+        arguments:
+            - '@command_chaining.command_chain'

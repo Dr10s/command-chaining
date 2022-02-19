@@ -1,0 +1,32 @@
+{
+    "name": "dr10s/command-chaining",
+    "type": "symfony-bundle",
+    "description": "Bridge for using command buses and event buses in Symfony projects",
+    "keywords": [
+        "Symfony"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/Dr10s/command-chaining",
+    "author": "https://github.com/Dr10s",
+    "require": {
+        "php": "8.*",
+        "psr/log": "^3.0",
+        "symfony/config": "6.*",
+        "symfony/console": "6.*",
+        "symfony/dependency-injection": "6.*",
+        "symfony/http-kernel": "6.*",
+        "symfony/yaml": "6.*"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "symfony/framework-bundle": "6.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dr10s\\CommandChaining\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
